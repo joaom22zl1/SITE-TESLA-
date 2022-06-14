@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <title>Tesla Model S</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/models.css" />
+    <link rel="stylesheet" href="../plugins/magnific-popup.css" />
+    <link
+      rel="shortcut icon"
+      href="../imagens/logopage.png"
+      type="image/x-icon"
+    />
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#modelo_fotos').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+          image: {
+            verticalFit: true,
+            titleSrc: function (item) {
+              return item.el.attr('')
+            }
+          },
+          gallery: {
+            enabled: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function (element) {
+              return element.find('img')
+            }
+          }
+        })
+      })
+    </script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300;1,500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    </style>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="container">
+        <a href="https://www.tesla.com/" target="_blank"
+          ><img src="../imagens/tesla_logo.png" id="logo_tesla_cabecalho"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../historia.html">História</a></li>
+            <li><a href="../modelos.html">Modelos</a></li>
+            <li><a href="../novidades.html">Novidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="dados">
+      <h1>Tesla Model S</h1>
+      <h2>
+        O Tesla Model S é um sedã movido a bateria que serve como o modelo
+        principal da Tesla, Inc. tendo um layout de tração traseira e com 2
+        vesões: Model S e Model S Plaid.
+      </h2>
+      <div class="ficha_tecnica">
+        <p>Autonomia: 637km</p>
+        <p>0-100: 2s</p>
+        <p>Velocidade Máxima: 322Km/h</p>
+        <p>Potência: 1034 cv</p>
+      </div>
+    </div>
+    <div id="galeria">
+      <img src="../imagens/modelos/interiorModelS.jpg" alt="" />
+      <div class="iframe">
+        <iframe
+          src="https://tesla-cdn.thron.com/delivery/public/video/tesla/a45a269f-1acf-4022-aa69-0d25518350e2/bvlatuR/WEBHD/MS-Interior-Carousel-5-Gaming-Desktop"
+          frameborder="0"
+          allow="autoplay"
+        ></iframe>
+      </div>
+    </div>
+
+    <section id="fotos">
+      <div class="container">
+        <div id="modelo_fotos">
+          <a href="../imagens/modelos/modelos_fotosModelS/1.jpg" title="Foto 01"
+            ><img src="../imagens/modelos/modelos_fotosModelS/1.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/2.jpg" title="Foto 02"
+            ><img src="../imagens/modelos/modelos_fotosModelS/2.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/3.jpg" title="Foto 03"
+            ><img src="../imagens/modelos/modelos_fotosModelS/3.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/4.jpg" title="Foto 04"
+            ><img src="../imagens/modelos/modelos_fotosModelS/4.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/5.jpg" title="Foto 05"
+            ><img src="../imagens/modelos/modelos_fotosModelS/5.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/6.jpg" title="Foto 06"
+            ><img src="../imagens/modelos/modelos_fotosModelS/6.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/7.jpg" title="Foto 07"
+            ><img src="../imagens/modelos/modelos_fotosModelS/7.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/modelos_fotosModelS/8.jpg" title="Foto 08"
+            ><img src="../imagens/modelos/modelos_fotosModelS/8.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="rodape">
+      <p>
+        Site construído para o Projeto da 2° Etapa na disciplina Introdução à
+        Tecnologia Web
+      </p>
+      <p>
+        Site Oficial <b>Tesla, Inc</b>:
+        <a href="https://www.tesla.com" target="_blank">Tesla.com</a>
+      </p>
+      <p>
+        <a href="http://www.unirios.edu.br" target="_blank"
+          >UniRios - Centro Universitário do Rio São Francisco</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

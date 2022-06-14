@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <title>Cybertruck</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cybertruck.css" />
+    <link rel="stylesheet" href="../plugins/magnific-popup.css" />
+    <link
+      rel="shortcut icon"
+      href="../imagens/logopage.png"
+      type="image/x-icon"
+    />
+    <script src="../plugins/jquery.min.js"></script>
+    <script src="../plugins/jquery.magnific-popup.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('#modelo_fotos').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          closeOnContentClick: false,
+          closeBtnInside: false,
+          mainClass: 'mfp-with-zoom mfp-img-mobile',
+          image: {
+            verticalFit: true,
+            titleSrc: function (item) {
+              return item.el.attr('')
+            }
+          },
+          gallery: {
+            enabled: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function (element) {
+              return element.find('img')
+            }
+          }
+        })
+      })
+    </script>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300;1,500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+    </style>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="container">
+        <a href="https://www.tesla.com/" target="_blank"
+          ><img src="../imagens/tesla_logo.png" id="logo_tesla_cabecalho"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../historia.html">História</a></li>
+            <li><a href="../modelos.html">Modelos</a></li>
+            <li><a href="../novidades.html">Novidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="dados">
+      <h1>Cybertruck</h1>
+      <h2>
+        O Tesla Cybertruck é uma pick-up elétrica de bateria leve anunciado pela
+        Tesla em 2019. Três modelos foram anunciados, com estimativas de alcance
+        da EPA de 400 a 800 quilômetros e uma estimativa de 0 a 100 km/h tempo
+        de 2,9–6,5 segundos, dependendo do modelo.
+      </h2>
+      <div class="ficha_tecnica">
+        <p>Autonomia: 800km</p>
+        <p>0-100: 2.9s</p>
+        <p>Carga Máxima: 1.5 Toneladas</p>
+        <p>Potência: Segredo</p>
+      </div>
+    </div>
+    <div id="galeria">
+      <img src="../imagens/modelos/cybertruck/background2.jpg" alt="" />
+      <div class="iframe">
+        <iframe
+          src="https://www.tesla.com/xNVh4yUEc3B9/performance_video_desktop.mp4"
+          frameborder="0"
+          allow="autoplay"
+        ></iframe>
+      </div>
+    </div>
+
+    <section id="fotos">
+      <div class="container">
+        <div id="modelo_fotos">
+          <a href="../imagens/modelos/cybertruck/1.jpg" title="Foto 01"
+            ><img src="../imagens/modelos/cybertruck/1.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/cybertruck/2.jpg" title="Foto 02"
+            ><img src="../imagens/modelos/cybertruck/2.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/cybertruck/3.jpg" title="Foto 03"
+            ><img src="../imagens/modelos/cybertruck/3.jpg" alt=""
+          /></a>
+          <a href="../imagens/modelos/cybertruck/4.jpg" title="Foto 04"
+            ><img src="../imagens/modelos/cybertruck/4.jpg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="rodape">
+      <p>
+        Site construído para o Projeto da 2° Etapa na disciplina Introdução à
+        Tecnologia Web
+      </p>
+      <p>
+        Site Oficial <b>Tesla, Inc</b>:
+        <a href="https://www.tesla.com" target="_blank">Tesla.com</a>
+      </p>
+      <p>
+        <a href="http://www.unirios.edu.br" target="_blank"
+          >UniRios - Centro Universitário do Rio São Francisco</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
