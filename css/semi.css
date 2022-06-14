@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(../imagens/modelos/semi/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root {
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(255, 255, 255);
+  --color-3: rgba(0, 0, 0, 0.815);
+  --color-h1: #262f3f;
+}
+
+/*========================CABECALHO==========================*/
+
+header {
+  height: 60px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#cabecalho {
+  position: relative;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-2);
+}
+
+#cabecalho nav li {
+  display: inline-block;
+}
+
+#cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#cabecalho #logo_tesla_cabecalho {
+  width: 150px;
+  margin-left: 10px;
+}
+
+#cabecalho nav li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-1);
+  padding: 15px 30px;
+  margin-left: 10px;
+}
+
+#cabecalho li a {
+  border-radius: 50px;
+}
+
+#cabecalho li a:hover {
+  background-color: rgba(0, 0, 0, 0.676);
+  color: var(--color-2);
+  transition: all 0.5s linear;
+  border-radius: 50px;
+}
+
+/*========================CONTEÚDO DO SITE==========================*/
+
+#dados {
+  width: 1200px;
+  height: 500px;
+  position: relative;
+  padding: 30px;
+}
+
+#dados h1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #2f2f2f;
+}
+
+#dados h2 {
+  margin-top: 10px;
+  margin-left: 50px;
+  text-align: justify;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#dados p{
+  display: inline;
+  width: 1000px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--color-2);
+}
+
+.ficha_tecnica {
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 18%;
+  background-color: rgba(0, 0, 0, 0.685);;
+  border-radius: 30px;
+}
+
+#galeria {
+    width:100%;
+    height: 850px;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 20px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#galeria img{
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 700px;
+} 
+
+iframe {
+  max-width: 700px;
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
+#fotos {
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.685);
+  padding: 50px 0;
+  margin-bottom: 150px;
+}
+
+#fotos #modelo_fotos {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+}
+
+#fotos #modelo_fotos img {
+  display: block;
+  width: 100%;
+}
+
+#fotos #modelo_fotos img:hover{
+  transform: scale(1.4);
+  transition: all 0.5s ease;
+}
+
+
+
+/*========================SLIDESHOW==========================*/
+
+.slideshow {
+  height: 520px;
+  width: 1000px;
+  border-radius: 20px;
+  overflow: hidden; /*esconder oque ta passando */
+  margin-left: 254px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar_slide {
+  width: 70px;
+  height: 17px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.bar_slide:hover {
+  background-color: var(--color-2);
+  transition: all 0.5s linear;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#slide1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+
+
+/*========================RODAPÉ==========================*/
+
+#rodape {
+  height: 120px;
+  text-align: center;
+  color: var(--color-2);
+  background-color: rgba(0, 0, 0, 0.850);
+  padding: 30px;
+}
+
+#rodape p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-2);
+}
+
+#rodape a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+#rodape a:hover {
+  text-decoration: underline;
+  color:#F32424;
+}
+
+
+
+
+
+
+
+
+
+
+
+

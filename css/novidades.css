@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../imagens/novidades-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+
+:root {
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(255, 255, 255);
+  --color-3: rgba(0, 0, 0, 0.815);
+  --color-h1: #262f3f;
+}
+
+/*========================CABECALHO==========================*/
+
+header {
+  height: 60px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#cabecalho nav li {
+  display: inline-block;
+}
+
+#cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#cabecalho #logo_tesla_cabecalho {
+  width: 150px;
+  margin-left: 10px;
+}
+
+#cabecalho nav li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-1);
+  padding: 15px 30px;
+  margin-left: 10px;
+}
+
+#cabecalho li a {
+  border-radius: 50px;
+}
+
+#cabecalho li a:hover {
+  background-color: rgba(0, 0, 0, 0.676);
+  color: var(--color-2);
+  transition: all 0.5s linear;
+  border-radius: 50px;
+}
+
+/*=============CONTEUDO================*/
+
+#content {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.850);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+#content img {
+  width: 100%;
+}
+
+
+
+/*==========RODAPE=============*/
+
+#rodape {
+  height: 120px;
+  text-align: center;
+  color: var(--color-2);
+  background-color: rgba(0, 0, 0, 0.850);
+  padding: 30px;
+}
+
+#rodape p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-2);
+}
+
+#rodape a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+#rodape a:hover {
+  text-decoration: underline;
+  color:#F32424;
+}

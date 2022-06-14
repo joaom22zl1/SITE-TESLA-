@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root {
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(255, 255, 255);
+  --color-3: rgba(0, 0, 0, 0.815);
+  --color-h1: #262f3f;
+}
+
+/*========================CABECALHO==========================*/
+
+header {
+  height: 60px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-2);
+}
+
+#cabecalho nav li {
+  display: inline-block;
+}
+
+#cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#cabecalho #logo_tesla_cabecalho {
+  width: 150px;
+  margin-left: 10px;
+}
+
+#cabecalho nav li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-1);
+  padding: 15px 30px;
+  margin-left: 10px;
+}
+
+#cabecalho li a {
+  border-radius: 50px;
+}
+
+#cabecalho li a:hover {
+  background-color: rgba(0, 0, 0, 0.676);
+  color: var(--color-2);
+  transition: all 0.5s linear;
+  border-radius: 50px;
+}
+
+/*========================CONTEÚDO DO SITE==========================*/
+
+.box-1 {
+  background-image: url(../imagens/modelos/models2.0.jpg);
+  width: 100%;
+  height:600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box-1 .modelo_link{
+  left: 46.9%;
+}
+
+.modelo_link {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  margin-bottom: 20px;
+  left: 47%;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--color-1);
+}
+
+.box-2 {
+  background-image: url(../imagens/modelos/model3.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.box-3 {
+  background-image: url(../imagens/modelos/modely.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.box-4 {
+  background-image: url(../imagens/modelos/modelx.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.box-5 {
+  background-image: url(../imagens/modelos/roadster.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box-5 .modelo_link{
+  left: 46.5%;
+}
+
+
+.box-6 {
+  background-image: url(../imagens/modelos/Semi.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box-6 .modelo_link{
+  left: 49%;
+}
+
+.box-7 {
+  background-image: url(../imagens/modelos/Cybertruck.jpg);
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box-7 .modelo_link {
+  left: 44%;
+}
+
+.modelo_link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.explorar_link {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 20px;
+  left: 47.0%;
+  font-family: 'Nunito Sans', sans-serif;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--color-1);
+  background-color: rgba(41, 41, 41, 0.692);
+  padding: 5px;
+  border-radius: 20px;
+  width: 150px;
+}
+
+.explorar_link:hover {
+  color: var(--color-2);
+  transition: 0.5s linear;
+  background-color: rgba(0, 0, 0, 0.738);
+}
+
+
+
+/*========================SLIDESHOW==========================*/
+
+.slideshow {
+  height: 520px;
+  width: 1000px;
+  border-radius: 20px;
+  overflow: hidden; /*esconder oque ta passando */
+  margin-left: 254px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+.bar_slide {
+  width: 70px;
+  height: 17px;
+  border: 2px solid white;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.bar_slide:hover {
+  background-color: var(--color-2);
+  transition: all 0.5s linear;
+}
+
+input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#slide1:checked ~ .s1{
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+  margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+  margin-left: -40%;
+}
+
+#slide4:checked ~ .s1{
+  margin-left: -60%;
+}
+
+#slide5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+
+
+/*========================RODAPÉ==========================*/
+
+#rodape {
+  height: 120px;
+  text-align: center;
+  color: var(--color-2);
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+}
+
+#rodape p {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-2);
+}
+
+#rodape a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+#rodape a:hover {
+  text-decoration: underline;
+  color:#F32424;
+}
+
+
+
+
+
+
+
+
+
+
+
+
