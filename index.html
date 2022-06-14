@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+  <head>
+    <title>Tesla.INC</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="imagens/logopage.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="plugins/jquery.bxslider.css" />
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('.slider').bxSlider({
+          mode: 'horizontal',
+          captions: true,
+          auto: true,
+          pager: true
+        })
+      })
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300;1,500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+    </style>
+  </head>
+  <body>
+    <header id="cabecalho">
+      <div class="container">
+        <a href="https://www.tesla.com/" target="_blank"
+          ><img src="imagens/tesla_logo.png" id="logo_tesla_cabecalho"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historia.html" target="_blank">História</a></li>
+            <li><a href="modelos.html" target="_blank">Modelos</a></li>
+            <li><a href="novidades.html" target="_blank">Novidades</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="apresentacao_site">
+      <h1>Uma Empresa Automotiva de Energia Limpa</h1>
+      <h2>A montadora mais valiosa do mundo</h2>
+      <p>
+        SITE OFICIAL:Order Online for
+        <a
+          href="https://www.tesla.com/support/taking-delivery?redirect=no"
+          target="_blank"
+          >Touchless Delivery</a
+        >
+      </p>
+    </div>
+    <div class="box_resumo_empresa">
+      <img src="imagens/imagem_box-resumo-empresa.jpg" alt="" />
+      <h3>Um pouco sobre a empresa...</h3>
+      <p>
+        A atuação principal da empresa está direcionada na fabricação e
+        distribuição de automóveis eletétricos, com a Tesla Motors, a companhia
+        também atua em projetos de sustentabilidade envolvendo armazenamento de
+        energia e a confecção de painéis solares, bem como na comercialização de
+        componentes elétricos como baterias industriais de lítio-íon.
+      </p>
+    </div>
+    <div class="intro_banner">
+      <h4>"Quickest Acceleration. Longest Range. The Safest Cars Ever."</h4>
+      <p>
+        A gama da fabricante se destaca pelo luxo, tecnologias de assistência à
+        direção com o Autopilot, e também pela performance. Outro diferencial
+        dos carros é a segurança, e todos eles conquistaram nota máxima em
+        testes de colisão feitos por instituições especializadas.
+      </p>
+    </div>
+    <section id="banner_modelos">
+      <div class="container">
+        <ul class="slider">
+          <li><img src="imagens/complemento3.jpg" /></li>
+          <li><img src="imagens/complemento4.jpg" /></li>
+          <li><img src="imagens/complemento2.jpg" /></li>
+          <li><img src="imagens/complemento5.jpg" /></li>
+          <li><img src="imagens/complemento6.jpg" /></li>
+          <li><img src="imagens/complemento7.jpg" /></li>
+          <li><img src="imagens/complemento.jpg" /></li>
+        </ul>
+      </div>
+    </section>
+    <footer id="rodape">
+      <p>
+        Site construído para o Projeto da 2° Etapa na disciplina Introdução à
+        Tecnologia Web
+      </p>
+      <p>
+        Site Oficial <b>Tesla, Inc</b>:
+        <a href="https://www.tesla.com" target="_blank">Tesla.com</a>
+      </p>
+      <p>
+        <a href="http://www.unirios.edu.br" target="_blank"
+          >UniRios - Centro Universitário do Rio São Francisco</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
